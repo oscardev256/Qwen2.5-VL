@@ -336,7 +336,7 @@ def process_vision_info(
         elif "audio" in info:
             #arr, _sr = fetch_audio(info); auds.append(arr)
             arr, sr = fetch_audio(info)
-            print("Process info.....")
+            #print("Process info.....")
             auds.append((arr, sr))            # <-- keep SR
         else:
             raise ValueError("Unknown vision info type")
